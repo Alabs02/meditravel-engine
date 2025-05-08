@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["src/*"],
+      "@core/*": ["src/core/*"],
+      "@shared/*": ["src/shared/*"],
+      "@config/*": ["src/config/*"],
+      "@role/*": ["src/modules/role/*"],
+      "@admin/*": ["src/modules/admin/*"],
+      "@auth/*": ["src/modules/auth/*"],
+      "@audit/*": ["src/modules/audit/*"],
+      "@user/*": ["src/modules/user/*"],
+      "@clinic/*": ["src/modules/clinic/*"],
+      "@database/*": ["src/modules/database/*"],
+      "@modules/*": ["src/modules/*"]
+    }
+  }
+}
