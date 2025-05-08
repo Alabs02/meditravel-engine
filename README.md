@@ -1,13 +1,15 @@
 # 🚀 MediTravel Engine – Core API
 
 > **The journey to your beauty – Top-Rated Clinics, Affordable Prices**  
-> Built with NestJS, Firebase, MongoDB, and Swagger. Production-grade, secure, and scalable.
+> Built with NestJS, Firebase, MongoDB, and Swagger. Production-grade, secure,
+> and scalable.
 
 ---
 
 ## 🧠 Overview
 
-MediTravel Engine is the backend core powering the MediTravel platform — a medical tourism service connecting users with verified clinics worldwide.
+MediTravel Engine is the backend core powering the MediTravel platform — a
+medical tourism service connecting users with verified clinics worldwide.
 
 It provides:
 
@@ -28,7 +30,8 @@ It provides:
 - **Database**: MongoDB + Mongoose 8
 - **Authentication**: Firebase Admin SDK
 - **API Docs**: Swagger + Header-based versioning
-- **Utilities**: `mongoose-delete`, `@faker-js/faker`, `class-validator`, `Passport`, `multer`
+- **Utilities**: `mongoose-delete`, `@faker-js/faker`, `class-validator`,
+  `Passport`, `multer`
 
 ---
 
@@ -37,7 +40,7 @@ It provides:
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/your-org/meditravel-engine.git
+git clone git@github.com:Alabs02/meditravel-engine.git
 cd meditravel-engine
 ```
 
@@ -62,7 +65,7 @@ MONGO_URI=your_connection_string
 FIREBASE_PROJECT_ID=...
 FIREBASE_CLIENT_EMAIL=...
 FIREBASE_PRIVATE_KEY=...
-PORT=8080
+PORT=4200
 ```
 
 ### 4. Start the app
@@ -111,10 +114,11 @@ pnpm tsx src/seed/clinic.seed.ts
 Docs available at:
 
 ```
-http://localhost:8080/api-docs
+http://127.0.0.1:4200/api-docs
 ```
 
 Use:
+
 - Header: `X-API-Version: 1`
 - Auth: Bearer token from Firebase login
 
@@ -122,8 +126,10 @@ Use:
 
 ## 🧠 Developer Notes
 
-- Role-based access is enforced using a custom `@Roles()` decorator + `RolesGuard`
-- All endpoints return a **standardized response format** using `@shared/response/response.service.ts`
+- Role-based access is enforced using a custom `@Roles()` decorator +
+  `RolesGuard`
+- All endpoints return a **standardized response format** using
+  `@shared/response/response.service.ts`
 - Clinic slugs are auto-generated and enforced to be unique
 - DTOs are lean and well-validated
 - Firebase UID is the single source of truth for user identity
